@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            margin-top: 50px;
+            justify-content: center;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,150px);
+            gap: 50px;
+            grid-template-areas:
+            "a b b c"
+            "d d e f"
+            "g h i i";
+        }
+        #box>div{
+            background-color: rgb(8, 123, 123);
+            border-radius: 3px;
+        }
+        #box > div:nth-child(1) {
+            grid-area: a;
+        }
+        #box > div:nth-child(2) {
+            grid-area: b;
+        }
+        #box > div:nth-child(3) {
+            grid-area: c;
+        }
+        #box > div:nth-child(4) {
+            grid-area: d;
+        }
+        #box > div:nth-child(5) {
+            grid-area: e;
+        }
+        #box > div:nth-child(6) {
+            grid-area: f;
+        }
+        #box > div:nth-child(7) {
+            grid-area: g;
+        }
+        #box > div:nth-child(8) {
+            grid-area: h;
+        }
+        #box > div:nth-child(9) {
+            grid-area: i;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

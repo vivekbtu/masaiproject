@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+        #box{
+            /* border: 1px solid red; */
+            width: 70%;
+            height: 500px;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            /* align-items: center; */
+        }
+        #box>div{
+            width: 30%;
+            /* border: 1px solid green; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 15px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #box>div>img{
+            width: 100%;
+            height: 50%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        #box>div :nth-child(2) {
+            font-size: 17px;
+            font-weight: bold;
+            color: blue;
+            margin-left: 10px;
+        }
+        #box>div>h2{
+            text-align: center;
+        }
+        #box>div :nth-child(4){
+            color: grey;
+            font-size: 17px;
+            text-align: center;
+        }
+        button{
+            height: 40px;
+            margin: auto;
+            color: red;
+            display: block;
+            /* text-align: center; */
+            margin-top: 20px;
+            border-radius: 5px;
+            border-color: red;
+            margin-bottom: 40px;
+        }
+        #smallbox{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 180px;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            /* align-items: center; */
+        }
+        #smallbox>div{
+            width: 30%;
+            /* border: 1px solid green; */
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #smallbox>div>img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai In The News</h1>
+    <div id="box">
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png" alt="Error">
+            <p>21 Dec 2021</p>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, amet!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png" alt="Error">
+            <p>26 Oct 2021</p>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, amet!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png" alt="Error">
+            <p>18 Aug 2020</p>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, amet!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+       
+    </div>
+    <button>SEE MORE ></button>
+    <h1>Our Investors, Who Believe In Us</h1>
+    <div id="smallbox">
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/unitus.svg" alt="Error">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/omidyar.svg" alt="Error">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/indiaQuotient.svg" alt="Error">
+        </div>
+    </div>
+</body>
+</html>

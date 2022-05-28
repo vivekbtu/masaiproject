@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 45%;
+            height: 300px;
+            border: 1px solid red;
+            margin-left: 200px ;
+            margin-top: 25%;
+            /* display: flex; */
+            
+
+        }
+        #box > div > div {
+            width: 8%;
+            height: 45px;
+            border: 1px solid red;
+            margin: 10px 0px 0px 8px;
+            display: inline-table;
+            background-color: rgb(41, 41, 187);
+            transform: translate(50%, 50%);
+        }
+        #longbox {
+            width: 8.5%;
+            height:500px;
+            border: 1px solid green;
+            margin-left: 0px;
+            margin-top: -500px;
+            /* margin-bottom: 250px; */
+            /* display: flex; */
+            display:flex;
+        }
+        #longbox > div > div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid brown;
+            margin-top: 19px;
+            margin-left: 7px;
+            /* background-color: red; */
+                 
+        }
+
+       .clr{
+          background-color: red;
+          text-align: center;
+        }
+        .clr1{
+            background-color: rgb(8, 54, 8);
+        }
+        .clr2{
+            background-color: brown;
+            text-align: center;
+        }
+        #smallbox {
+            width: 3%;
+            height: 100px;
+            border: 1px solid red;
+            margin-left: 140px;
+            margin-top: -110px;
+           /* display:inline-table; */
+        }
+        #smallbox > div{
+            width: 80%;
+            height:40%;
+            border: 1px solid rebeccapurple;
+            margin-top: 6px;
+            margin-left: 2px;
+            /* display:table-column; */
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="longbox">
+        <div>
+            <div class="clr2"><h2>H</h2></div>
+            <div class="clr1"></div>
+            <div class="clr1"></div>
+            <div class="clr1"></div>
+            <div class="clr1"></div>
+            <div class="clr1"></div>
+            <div class="clr1"></div>
+        </div>
+        <div>
+            <div ></div>
+            <div class="clr"><h2>4</h2></div>
+            <div class="clr"><h2>12</h2></div>
+            <div class="clr"><h2>20</h2></div>
+            <div class="clr"><h2>38</h2></div>
+            <div class="clr"><h2>56</h2></div>
+            <div class="clr"><h2>88</h2></div>
+        </div>
+    </div>
+    <div id="smallbox">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

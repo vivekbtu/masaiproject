@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVESTOR PAGE</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        #top{
+            width: 80%;
+            display: grid;
+            margin: auto;
+            /* border: 1px solid red; */
+            justify-content: center;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+        }
+        #top>div{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            
+        }
+        #top>div>img{
+            width: 100%;
+        }
+        #box{
+            width: 85%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            /* border: 1px solid green; */
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5, 420px);
+            gap: 20px;
+            
+        }
+        #box>div{
+            /* border: 1px solid red; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+        }
+        #box>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #box>div>h3{
+            text-align: center;
+            margin-top: 5px;
+        }
+        #box>div>p{
+            text-align: center;
+            font-size: 17px;
+            margin-top: -10px;
+        }
+        #box>div>div{
+            /* border: 1px solid brown; */
+            /* margin-top: 10px; */
+            display: grid;
+            grid-template-columns: 50%;
+            grid-template-rows: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        #box>div>div>img{
+            width: 100%;
+        }
+        @media all and (min-width:480px) and (max-width: 720px) {
+                h1{
+                text-align: center;
+                font-size: 30px;
+            }
+                /* #top>div{
+                
+            } */
+                #box{
+                
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(7, 300px);
+                 /* gap: 20px;  */
+                
+            }
+            #box>div>h3{
+                font-size: 15px;
+            }
+            #box>div>p{
+                font-size: 15px;
+                margin-top: -3px;
+            }
+            #box>div>div>img{
+               margin-top: 0px;
+            }
+
+        }
+
+        @media all and (min-width:240px) and (max-width: 479px) {
+            h1{
+                text-align: center;
+                font-size: 23px;
+            }
+                #top{
+                    
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(3,auto);
+            }
+                #box{
+                
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(10, auto);
+                 /* gap: 20px;  */
+                
+            }
+                #box>div>h3{
+                font-size: 15px;
+            }
+                #box>div>p{
+                font-size: 13px;
+                margin-top: -3px;
+            }
+                #box>div>div>img{
+               margin-top: -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Board Members</h1>
+    <div id="top">
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/india-q-borderless.svg" alt="">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/unitus-borderless.svg" alt="">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/omidyar-borderless.svg" alt="">
+        </div>
+    </div>
+    <h1>Strategic Investors</h1>
+    <div id="box">
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
+            <h3>Vijay Shekhar Sharma</h3>
+            <p>Founder & CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
+            <h3>Kunal Shah</h3>
+            <p>Founder</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+            <h3>Amrish Rau</h3>
+            <p>CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="">
+            <h3>Sampad Swain</h3>
+            <p>Co-Founder & CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="">
+            <h3>Ankush Sachdeva</h3>
+            <p>Co-Founder & CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="">
+            <h3>Bhanu Pratap Singh</h3>
+            <p>Co-Founder & CTO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" alt="">
+            <h3>Farid Ahsan</h3>
+            <p>Co-Founder & COO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="">
+            <h3>Amit Kumar Agarwal</h3>
+            <p>Founder & CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg" alt="">
+            <h3>Akhil Gupta</h3>
+            <p>Founder & CTO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg" alt="">
+            <h3>Saurabh Garg</h3>
+            <p>Co-Founder & CBO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg" alt="">
+            <h3>Vipin Pathak</h3>
+            <p>Co-Founder & CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg" alt="">
+            <h3>Ramakant Sharma</h3>
+            <p>Founder</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg" alt="">
+            <h3>Mohit Tandon</h3>
+            <p>Co-Founder</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg" alt="">
+            <h3>Abhishek Goyal</h3>
+            <p>Co-Founder</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg" alt="">
+            <h3>Anurag Jain</h3>
+            <p>Founder & Executive Director</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg" alt="">
+            <h3>Harshvardhan Lunia</h3>
+            <p>Co-Founder & CEO</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg" alt="">
+            <h3>Sunil Rao</h3>
+            <p>Country Head Strategy and Corporate</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg" alt="">
+            <h3>Sharda Balaji</h3>
+            <p>Founder</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg" alt="">
+            <h3>Kulin Shah</h3>
+            <p>Co-Founder</p>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

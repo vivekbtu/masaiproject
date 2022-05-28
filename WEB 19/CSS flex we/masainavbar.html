@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASAI NAVBAR</title>
+    <style>
+        #box{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        #box > div:first-child{
+            width: 10%;
+            height: 100%;
+            /* border: 1px solid green; */
+        }
+        #box > div:last-child {
+            width: 70%;
+            height: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+            /* font-size: 14px; */
+            justify-content: space-around;
+
+        }
+       #box>div>p:hover{
+            color: red;
+        }
+        select:hover{
+            color: red;
+        }
+        #box>div>div:hover{
+            background-color: aliceblue;
+        }
+        #box>div>button:hover{
+            background-color: rgb(222, 142, 142);
+        }
+        #box>div{
+            /* margin: auto; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        } 
+        p+div{
+            display: flex;
+            /* background-color: rgb(224, 246, 246); */
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        p+div>img{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+        select{
+            border: none;
+        }
+        #box>div>div+button{
+            display: block;
+            color: red;
+            height: 45px;
+            width: 80px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="Masai logo">
+        </div>
+        <div>
+            <select>
+                <option value="">COURSES</option>
+                <option value="">Web Devlopment</option>
+                <option value="">Data Analytic</option>
+                <option value="">Android Devlopment</option>
+            </select>
+            <p>FEES & ISA</p>
+            <p>ABOUT US</p>
+            <p>HIRE FROM US</p>
+            <p>FAQ</p>
+            <p>EVENTS</p>
+            <div>
+                <p>Refer & Earn</p>
+                <img src="https://www.masaischool.com/img/referral/hand.png" alt="">
+            </div>
+            <button>LOGIN</button>
+        </div>
+       
+    </div>
+</body>
+</html>

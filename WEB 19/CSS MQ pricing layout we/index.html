@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRICING LAYOUT</title>
+    <style>
+        #heading{
+            width: 33%;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+        #heading>h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        #heading>p{
+            text-align: center;
+            color: grey;
+            font-size: 18px;
+        }
+        #box{
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 350px;
+            margin: auto;
+            margin-top: 50px;
+            gap: 30px;
+        }
+        #box>div{
+            /* border: 1px solid green; */
+            text-align: center;
+        }
+        #box>div>h2{
+            font-size: 25px;
+        }
+        #box>div:nth-child(1) > h1{
+            color: green;
+        }
+        #box>div:nth-child(2) > h1{
+            color: brown;
+        }
+        #box>div:nth-child(3) > h1{
+            color: blue;
+        }
+        #box>div>h1 +p{
+            font-style: italic;
+            margin-top: -20px;
+            color: grey;
+            font-size: 18px;
+        }
+        #box>div>h1+p+p{
+            margin-top: 20px;
+            font-size: 18px;
+            color: grey;
+        }
+        button{
+            color: blue;
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            /* background-color: transparent; */
+            border: 1px solid blue;
+            border-radius: 8px;
+            padding: 15px 25px 15px 25px;
+        }
+        #box>div:nth-child(2) >button {
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        @media all and (min-width:480px) and (max-width:720px) {
+            #heading{
+            width: 90%;
+            /* border: 1px solid red; */
+            /* margin: auto; */
+        }
+        #heading>h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        #heading>p{
+            text-align: center;
+            color: grey;
+            font-size: 17px;
+        }
+            #box{
+            width: 85%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 350px 350px;
+            /* margin: auto;
+            margin-top: 50px;
+            gap: 30px; */
+        }
+        }
+
+        @media all and (min-width:340px) and (max-width:479px) {
+            #heading{
+            width: 90%;
+            /* border: 1px solid red; */
+            /* margin: auto; */
+        }
+        #heading>h1{
+            text-align: center;
+            font-size: 20px;
+        }
+        #heading>p{
+            text-align: center;
+            color: grey;
+            font-size: 16px;
+        }
+            #box{
+            width: 70%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 350px 350px 350px;
+            /* margin: auto;
+            margin-top: 50px;
+            gap: 30px; */
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Choose a plan that right for your business</h1>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website are really like!
+        </p>
+      </div>
+      <div id="box">
+          <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+          </div>
+          <div>
+            <h2>Business Plan</h2>
+            <h1>$39.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+          </div>
+          <div>
+            <h2>Premium Plan</h2>
+            <h1>$59.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+          </div>
+      </div>
+</body>
+</html>

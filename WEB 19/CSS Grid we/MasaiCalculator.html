@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <style>
+        h1{
+            text-align: center;
+            color: teal;
+            margin-top: 30px;
+            font-size: 35px;
+        }
+        #box{
+           width: 20%;
+           height: 400px;
+           /* border: 1px solid red; */
+           margin: auto;
+           display: grid;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          
+        }
+        
+       #display{
+           width: 80%;
+           margin: auto;
+           height: 50px;
+           margin-top: 30px;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           /* border: 1px solid green; */
+       }
+       #keybord{
+           width: 80%;
+           margin: auto;
+           margin-top: 6px;
+           display: grid;
+          grid-template-columns:repeat(4,1fr);
+          grid-template-rows: repeat(4,50px);
+          /* border: 1px solid green; */
+          gap: 10px;
+       }
+       #keybord>div{
+          /* border: 1px solid brown; */
+          display: flex;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          font-weight: bold;
+          border-radius: 5px;
+       }
+       .black{
+           color: white;
+           background-color: black;
+       }
+       .red{
+           color: white;
+           background-color: red;
+       }
+       #keybord>div:hover{
+           background-color: green;
+       }
+       #keybord>div.black:hover{
+           background-color: blue;
+       }
+       #keybord>div.red:hover{
+           background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="box">
+        <div id="display">
+            
+        </div>
+        <div id="keybord">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="black">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="black">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="black">x</div>
+            <div class="red">C</div>
+            <div>0</div>
+            <div class="black">=</div>
+            <div class="black">/</div>
+        </div>
+    </div>
+</body>
+</html>

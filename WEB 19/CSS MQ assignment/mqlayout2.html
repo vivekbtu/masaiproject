@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ LAYOUT 3</title>
+    <style>
+        #nav {
+            width: 100%;
+            background-color: yellow;
+            /* display: flex; */
+           font-weight: bold;
+           grid-area: nav;    
+        }
+        #box{
+            /* width: 100%; */
+            margin: auto;
+            margin-top: 40px;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 70px repeat(3,150px);
+            gap: 30px;
+            grid-template-areas: 
+            "nav nav nav"
+            "LB LB RB1"
+            "LB LB RB2"
+            "LB LB RB3";
+        }
+        #box>div{
+            /* border: 1px solid rgb(34, 205, 34); */
+            font-size: 30px;
+            padding: 15px 15px;
+        }
+        #box>div:nth-child(2) {
+            background-color: red;
+            grid-area: LB;
+        }
+        #box>div:nth-child(3) {
+            background-color: rgb(29, 202, 29);
+            grid-area: RB1;
+        }
+        #box>div:nth-child(4) {
+            background-color: rgb(29, 202, 29);
+            grid-area: RB2;
+        }
+        #box>div:nth-child(5) {
+            background-color: rgb(29, 202, 29);
+            grid-area: RB3;
+        }
+
+            @media all and (min-width:480px) and (max-width: 720px) {
+             #box{
+           
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 70px repeat(3,120px);
+            gap: 30px;
+            grid-template-areas: 
+            "nav nav nav"
+            "LB LB LB"
+            "LB LB LB"
+            "RB1 RB2 RB3";
+           }
+           #box>div{
+            font-size: 25px;
+            padding: 15px 25px;
+         }
+         }
+        
+         @media all and (min-width:240px) and (max-width: 479px) {
+            #box{
+           
+           grid-template-columns: repeat(1,1fr);
+           grid-template-rows: 70px repeat(5,150px);
+           gap: 30px;
+           grid-template-areas: 
+           "nav"
+           "LB"
+           "LB"
+           "RB1"
+           "RB2"
+           "RB3";
+          }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="nav">Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX 1</div>
+        <div>RIGHT BOX 2</div>
+        <div>RIGHT BOX 3</div>
+    </div>
+</body>
+</html>

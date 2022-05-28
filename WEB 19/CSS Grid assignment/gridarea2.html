@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            margin-top: 60px;
+            justify-content: center;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(11,1px);
+            gap: 30px 20px;
+            grid-template-areas: 
+            "a a b e"
+            "a a b e"
+            "a a b e"
+            "a a b e"
+            "a a b e"
+            "c d b e"
+            "c d b e"
+            "c d b e"
+            "c d b e"
+            "c d b e"
+            "0 0 0 e";
+        }
+        #box>div{
+            background-color: rgb(74, 74, 74);
+            display: grid;
+            padding: 35px 30px;
+            font-size: 40px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: aliceblue;
+
+        }
+        #box > div:nth-child(1) {
+            grid-area: a;
+        }
+        #box > div:nth-child(2) {
+            grid-area: b;
+        }
+        #box > div:nth-child(3) {
+            grid-area: c;
+        }
+        #box > div:nth-child(4) {
+            grid-area: d;
+        }
+        #box > div:nth-child(5) {
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>
